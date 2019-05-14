@@ -1,0 +1,21 @@
+<!--pages/job/job.wxml-->
+<view class='header'>
+    <view class='pick'>
+        <picker class="picker-address" bindchange="bindChangeAddress" value="{{addressIndex}}"  range="{{addressList}}" range-key="{{'saname'}}"><view>{{addressList[addressIndex].saname}}<i class="iconfont iconxiala"></i></view></picker>
+        <picker bindchange="bindChangeJob" data-selecthx="{{jobTypeList[jobTypeIndex].sdoid}}" value="{{jobTypeIndex}}"  range="{{jobTypeList}}" range-key="{{'sdoname'}}"><view>{{jobTypeList[jobTypeIndex].sdoname}}<i class="iconfont iconxiala"></i></view></picker>
+    </view>
+    <view class='search'>
+        <input class='search-val' placeholder="搜索职位" bindinput="getVal" bindconfirm="searchBtn" confirm-type="search"></input>
+    </view>
+    
+</view>
+<view class='main'>
+    <view class='main-list' wx:for="{{jobList}}">
+        <navigator url='/pages/jobInfo/jobInfo?jid={{item.jid}}&mid={{mid}}' hover-class="none">
+            <view class='job-top'><view class='job-name'>{{item.jname}}</view><view class='job-time'>{{item.jpublishtime}}</view></view>
+            <view class='job-info'><text class='fl jtypename'>{{item.jtypename}}</text><text class='fl jnumber'><text class='job-num'>{{item.jnumber}}</text>人</text><text class='fl jaddress'>{{item.jaddress}}</text></view>
+            
+        </navigator>
+    </view>
+</view>
+

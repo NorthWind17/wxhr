@@ -1,0 +1,92 @@
+/* pages/jobInfo/jobInfo.wxss */
+@import "/pages/iconfont.wxss";
+.header{
+    width: 92%;
+    margin: 0 auto;
+    margin-bottom: 40rpx;
+    font-size: 28rpx;
+    margin-top: 20rpx;
+    word-wrap: break-word;
+    word-break: normal;
+}
+.header-top{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10rpx;
+}
+.job-name{
+    font-size: 40rpx;
+    font-weight: bold;
+    color: #000a12;
+    width: 70%;
+}
+.job-time{
+    width:30%;
+    color: #919191;
+    text-align: right;
+}
+.job-info{
+    margin-bottom: 12rpx;
+    line-height: 2.2;
+    color: #919191;
+}
+.job-info>text{
+    margin-right: 40rpx;
+    background-color: #eee;
+    padding: 5rpx 40rpx;
+}
+.job-info .job-num{
+    margin-right: 0;
+}
+.main{
+    width: 92%;
+    margin: 0 auto;
+    font-size: 28rpx;
+    word-wrap: break-word;
+    word-break: normal;
+}
+.main view{
+    margin-bottom: 20rpx;
+    line-height: 2;
+}
+.job-des1,.job-des2,.job-des3{
+    font-size: 32rpx;
+    font-weight: 700;
+}
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 999;
+    font-size: 32rpx;background: #fff;
+    width: 100%;
+    height: 100rpx;
+    /* line-height: 1.5; */
+}
+.footer .call,.share{
+    width: 20%;
+    height: 100rpx;
+    /* line-height: 1.5; */
+    text-align: center;
+    float: left;
+    font-size: 28rpx;
+}
+
+.share{
+    background-color:#fff;
+}
+.share::after{ border: none; } 
+.call view,.share view{
+    height: 50rpx;
+    line-height: 50rpx
+}
+.footer navigator{
+    display: inline-block;
+    float: left;
+    width:60%;
+    height: 100rpx;
+    line-height: 100rpx;
+    text-align: center;
+    background-color: rgb(30, 159, 255);
+    color: #fff;
+}

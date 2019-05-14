@@ -1,0 +1,42 @@
+<!--index.wxml-->
+<!-- <view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view> -->
+<!-- <swiper indicator-active-color="#1E9FFF" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}"
+>
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <navigator url="/pages/job/{{item.hburl}}" hover-class="none"><image src="{{item.imageurl}}" class="slide-image" width="100%" height="150" /></navigator>
+    </swiper-item>
+  </block>
+</swiper> -->
+<view class='menu'>
+  <view wx:for="{{menuList}}"><navigator url="/pages/job/{{item.murl}}" hover-class="none"><image src="{{item.imageurl}}" class="slide-image" width="100%" height="150" /></navigator></view>
+</view>
+<view class='footer'>
+    <view class='link'>联系方式</view>
+    <view class='tel'>
+        <view class='icon fl'><i class="iconfont iconshouji-copy"></i></view>
+        <view class='fl'>
+            <view>施慧达药业集团人事部</view>
+            <view>021-55512958-111</view>
+        </view>
+    </view>
+    <view class='address'>
+        <view class='icon fl'><i class="iconfont iconziyuan"></i></view>
+        <view class='fl'>
+            <view>上海市杨浦区国权路39号</view>
+            <view>财富广场金座5层</view>
+        </view>
+    </view>
+</view>
+

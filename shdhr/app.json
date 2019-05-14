@@ -1,0 +1,15 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/job/job",
+        "pages/jobInfo/jobInfo",
+        "pages/send/send"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#1E9FFF",
+        "navigationBarTextStyle": "white",
+        "onReachBottomDistance": 50
+    },
+    "sitemapLocation": "sitemap.json"
+}

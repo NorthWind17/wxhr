@@ -1,0 +1,147 @@
+/* pages/job/job.wxss */
+@import "/pages/iconfont.wxss";
+
+.header {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 20rpx;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+}
+
+.search, .pick {
+    width: 100%;
+    height: 60rpx;
+    line-height: 60rpx;
+    padding-bottom: 10rpx;
+}
+
+.search {
+    width: 92%;
+    margin: 0 auto;
+}
+
+.search-val {
+    display: inline-block;
+    width: 100%;
+    height: 60rpx;
+    -webkit-appearance: none;
+    border: 2rpx solid #eee;
+    font-size: 28rpx;
+    border-radius: 16rpx;
+    background-color: #eee;
+    text-align: center;
+}
+
+/* .search-btn{
+    width: 28%;
+    height: 80rpx;
+    border: none;
+    border-radius: 0;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    background-color: #1E9FFF;
+    padding: 0;
+} */
+
+.pick {
+    display: flex;
+    justify-content: space-between;
+    /* margin-bottom: 28rpx; */
+    border-bottom: 2rpx solid #ccc;
+    font-size: 28rpx;
+    margin-bottom: 12rpx;
+}
+
+.pick picker {
+    width: 40%;
+    text-align: center;
+}
+
+.main {
+    font-size: 28rpx;
+    width: 92%;
+    margin: 0 auto;
+    margin-top: 202rpx;
+    color: #333;
+    background-color: #fff;
+}
+
+.main-list {
+    border-bottom: 1px solid #eee;
+}
+
+.main-list navigator {
+    padding: 20rpx 0;
+}
+
+.job-top {
+    height: 40rpx;
+    margin-bottom: 20rpx;
+    display: flex;
+    justify-content: space-between;
+}
+
+.job-name {
+    font-size: 32rpx;
+    /* font-weight: bold; */
+    color: #000;
+    margin-bottom: 12rpx;
+    width: 70%;
+    height: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.job-time {
+    width: 30%;
+    height: 100%;
+    text-align: right;
+    color: #919191;
+}
+
+.job-info {
+    width: 100%;
+    height: 40rpx;
+    margin-bottom: 12rpx;
+    
+}
+
+.job-info>text {
+    margin-right: 20rpx;
+    background-color: #eee;
+    padding: 5rpx 20rpx;
+    color: #919191;
+}
+
+.job-info .job-num {
+    margin-right: 0;
+}
+.jaddress {
+    max-width: 52%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+/* .jtypename {
+    width: 14%;
+}
+
+.jnumber {
+    width: 14%;
+    text-align: center;
+}
+
+.jaddress {
+    width: 28%;
+}
+
+.jtypename, .jnumber, .jaddress {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+} */

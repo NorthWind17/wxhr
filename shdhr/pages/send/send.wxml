@@ -1,0 +1,47 @@
+<!--pages/send/send.wxml-->
+<!-- <view class='header'>
+    <view class='job-name'>{{job.jname}}</view>
+    <view class='job-info'><text>{{job.jtypename}}</text><text>{{job.jaddress}}</text><text><text class='job-num'>{{job.jnumber}}</text>人</text></view>
+    <view class='job-time'>发布时间：<text>{{job.jpublishtime}}</text></view>
+</view>
+<view class='main'>
+    <view>
+        <view><text>*</text>姓名</view>
+        <input placeholder='请输入姓名'></input>
+    </view>
+    <view>
+        <view><text>*</text>手机号</view>
+        <input placeholder='请输入手机号'></input>
+    </view>
+    <view>
+        <view><text>*</text>图片验证码</view>
+        <view class="wCode">
+            <input type="text" id="code2" placeholder="请输入验证码" required class="fl"/>
+            <view class="fr" id="vCode2" style=" height: 100%; display: inline-block;border-radius: 8px;" ><image id="imagecode" alt="验证码" src="https://health.shihuidapharma.com/api/common/sys_image_code.ashx" style="cursor:pointer;" onclick="this.src='https://health.shihuidapharma.com/api/common/sys_image_code.ashx?t='+new Date().getTime()" /></view>
+            
+        </view>
+    </view>
+    <view>
+        <view><text>*</text>短信验证码</view>
+        <view class='msg'>
+            <input type="text" placeholder="请输入短信验证码" id="messge" value="" class="fl"></input>
+            <button type="button" id="nbtn" class="fr nbtn">获取验证码</button>
+        </view>
+        
+    </view>
+    <view>
+        <view><text>*</text>邮箱</view>
+        <input placeholder='请输入邮箱'></input>
+    </view>
+    <view>
+        <view><text>*</text>简历（简历不得大于50M）</view>
+        <input placeholder='姓名'></input>
+    </view>
+    <button id='put'>提交</button>
+</view> -->
+<view style='width:100%;'><image style='width:100%;' src='../../images/bac.jpg'></image></view>
+<view style='width:92%;margin: 0 auto;margin-top:40rpx;font-size:20px;text-align:center;'>
+    <view>小程序暂不支持上传文档</view>
+    <view>请发送简历至邮箱！</view>
+    <view style='color:#1E9FFF;'>{{jemail}}</view>
+</view>

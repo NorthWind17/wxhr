@@ -1,0 +1,21 @@
+<!--pages/jobInfo/jobInfo.wxml-->
+<view class='header'>
+    <view class='header-top'>
+        <view class='job-name'>{{job.jname}}</view>
+        <view class='job-time'>{{job.jpublishtime}}</view>
+    </view>
+    <view class='job-info'><text>{{job.jtypename}}</text><text><text class='job-num'>{{job.jnumber}}</text>人</text><text>{{job.jaddress}}</text></view>
+    
+    
+</view>
+<view class='main'>
+    <view class='job-des1'>职位描述</view>
+    <view><text>{{job.jpost}}</text></view>
+    <view class='job-des2'>任职要求</view>
+    <view><text>{{job.jrequirement}}</text></view>
+    <view style='width:100%;height: 200rpx;'></view>
+    <!-- <view class='job-des3'>工作地点：</view>
+    <view>{{job.jaddress}}</view> -->
+</view>
+<view class='footer'><view class="call" bindtap="call"><view><i class="iconfont iconiconfontdianhua2"></i></view><view>电话</view></view><button class="share" open-type="share"><view><i class="iconfont iconicon_share"></i></view><view>分享</view></button><navigator url='/pages/send/send?jid={{jid}}' hover-class="none">申请职位</navigator></view>   
+

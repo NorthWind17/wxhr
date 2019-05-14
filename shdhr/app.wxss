@@ -1,0 +1,14 @@
+/**app.wxss**/
+body{
+    font-size: 14px;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.navigator-hover {
+    /* background-color: #fff;
+    opacity: 0; */
+}
